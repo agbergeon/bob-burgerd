@@ -19,7 +19,7 @@ Properties:
 
 var playerData ={
 	info:{
-		src:`images/snale.png`
+		src:`images/spritesheet.png`
 	},
 	states:{
 		//The idle animation 
@@ -29,8 +29,11 @@ var playerData ={
 			cycle:true,
 			frames:
 			[
-				{width:128, height:128, startX:0, startY:0},
-				{width:128, height:128, startX:128, startY:0}
+				{width:65, height:120, startX:0, startY:0},
+				{width:65, height:120, startX:66, startY:0},
+				{width:65, height:120, startX:132, startY:0},
+				{width:65, height:120, startX:198, startY:0},
+				{width:65, height:120, startX:264, startY:0}
 				
 			]
 		},
@@ -41,52 +44,74 @@ var playerData ={
 			cycle:true,
 			frames:
 			[
-				{width:128, height:128, startX:0, startY:0},
-				{width:128, height:128, startX:128, startY:0},
-				{width:128, height:128, startX:256, startY:0},
-				{width:128, height:128, startX:384, startY:0},
-				{width:128, height:128, startX:512, startY:0}
+				{width:69, height:120, startX:340, startY:0},
+				{width:69, height:120, startX:414, startY:0},
+				{width:69, height:120, startX:485, startY:0},
+				{width:69, height:120, startX:627, startY:0},
+				{width:69, height:120, startX:698, startY:0},
+				{width:69, height:120, startX:769, startY:0},
+				{width:69, height:120, startX:840, startY:0},
+				{width:69, height:120, startX:911, startY:0},
+				{width:69, height:120, startX:627, startY:0},
+				{width:69, height:120, startX:485, startY:0},
+				{width:69, height:120, startX:414, startY:0},
+				{width:69, height:120, startX:340, startY:0}
 			]
 		},
 		//The jump animation 
 		jump:
 		{
-			fps:15,
+			fps:3,
 			cycle:false,
 			frames:
 			[
-				{width:128, height:128, startX:640, startY:0}
+				{width:67, height:120, startX:2823, startY:0},
+				{width:67, height:120, startX:2892, startY:0},
+				{width:67, height:120, startX:2961, startY:0},
+				{width:67, height:120, startX:3030, startY:0},
+				{width:67, height:120, startX:3099, startY:0},
+				{width:67, height:120, startX:3306, startY:0},
+				{width:67, height:120, startX:2961, startY:0},
+				{width:67, height:120, startX:2892, startY:0},
+				{width:67, height:120, startX:2823, startY:0},
 			]
 		},
 		//The crouch animation 
 		crouch:
 		{
-			fps:15,
+			fps:10,
 			cycle:true,
 			frames:
 			[
-				{width:128, height:128, startX:768, startY:0},
-				{width:128, height:128, startX:768, startY:0},
-				{width:128, height:128, startX:768, startY:0},
-				{width:128, height:128, startX:768, startY:0},
-				{width:128, height:128, startX:896, startY:0}
+				{width:67, height:120, startX:1266, startY:0},
+				{width:67, height:120, startX:1404, startY:0},
+				{width:67, height:120, startX:1473, startY:0},
+				{width:67, height:120, startX:1542, startY:0},
+				{width:67, height:120, startX:1611, startY:0},
+				{width:67, height:120, startX:1680, startY:0},
+				{width:67, height:120, startX:1749, startY:0},
+				{width:67, height:120, startX:1818, startY:0}
 			]
 		},
 		//The attack animation 
 		attack:
 		{
-			fps:3,
+			fps:2,
 			cycle:false,
 			//width:300,
 			frames:
 			[
-				{width:128, height:128, startX:1024, startY:0},
-				{width:128, height:128, startX:1024, startY:0},
-				{width:128, height:128, startX:1024, startY:0},
-				{width:128, height:128, startX:1152, startY:0},
-				{width:128, height:128, startX:1152, startY:0},
-				{width:128, height:128, startX:1152, startY:0},
-				{width:128, height:128, startX:1152, startY:0}
+				{width:67, height:120, startX:1956, startY:0},
+				{width:74, height:120, startX:2025, startY:0},
+				{width:75, height:120, startX:2102, startY:0},
+				{width:76, height:120, startX:2178, startY:0},
+				{width:82, height:120, startX:2256, startY:0},
+				{width:82, height:120, startX:2340, startY:0},
+				{width:82, height:120, startX:2424, startY:0},
+				{width:76, height:120, startX:2178, startY:0},
+				{width:75, height:120, startX:2102, startY:0},
+				{width:74, height:120, startX:2025, startY:0},
+				{width:67, height:120, startX:1956, startY:0}
 				
 			]
 		}
