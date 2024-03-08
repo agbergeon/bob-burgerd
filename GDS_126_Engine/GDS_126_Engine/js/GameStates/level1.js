@@ -19,7 +19,7 @@ ground.img.src=`images/ground.png`
 
 //A platform
 var plat = new GameObject({width:256, height:64,y:canvas.height-200, color:"green", world:level})
-
+plat.img.src=`images/platform.png`
 
 
 var leftBorder = new GameObject({width:50, height:canvas.height, world:level, x:0})
@@ -259,9 +259,13 @@ gameStates[`level1`] = function()
 	
 	//Sets up pattern for the ground
 	var groundPattern = context.createPattern(ground.img, `repeat`);
+
+	//Sets up pattern for the platform
+	var platformPattern = context.createPattern(plat.img, `repeat`);
+
 	//Applies pattern to ground and platform
 	ground.color = groundPattern
-	plat.color = groundPattern
+	plat.color = platformPattern
 
 	//Sets up pattern for the sky
 	var skyPattern = context.createPattern(sky.img, `repeat`);
